@@ -1,0 +1,9 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#ffe66d"/>
+  <rect x="50" y="50" width="500" height="300" fill="#fff" rx="10"/>
+  <text x="300" y="180" text-anchor="middle" fill="#ffe66d" font-size="24" font-family="Arial, sans-serif" font-weight="bold">Quiz App</text>
+  <text x="300" y="210" text-anchor="middle" fill="#ffe66d" font-size="16" font-family="Arial, sans-serif">Online Exam System</text>
+  <rect x="200" y="230" width="40" height="40" fill="#ffe66d" rx="5"/>
+  <rect x="260" y="230" width="40" height="40" fill="#ffe66d" rx="5"/>
+  <rect x="320" y="230" width="40" height="40" fill="#ffe66d" rx="5"/>
+</svg>

@@ -1,0 +1,298 @@
+/* Skills Section Styles */
+.skills-section {
+  padding: 4rem 2rem 2rem 2rem;
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  min-height: 100vh;
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--accent-primary) !important;
+}
+.skills-3d-grid {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skills-3d-canvas {
+  flex: 0 0 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-tertiary);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 12px var(--shadow-color);
+}
+
+/* CSS Skills Visualization */
+.css-skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  animation: skillsContainerFloat 8s ease-in-out infinite;
+}
+
+.skills-orb {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px var(--accent-primary);
+  animation: orbGlow 3s ease-in-out infinite alternate;
+}
+
+.skills-orb .skill-icon {
+  font-size: 2rem;
+  animation: iconPulse 2s ease-in-out infinite;
+}
+
+.orbit {
+  position: absolute;
+  border: 2px solid var(--accent-secondary);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.orbit-1 {
+  width: 120px;
+  height: 120px;
+  top: -20px;
+  left: -20px;
+  animation: orbit1 10s linear infinite;
+}
+
+.orbit-2 {
+  width: 160px;
+  height: 160px;
+  top: -40px;
+  left: -40px;
+  animation: orbit2 15s linear infinite reverse;
+}
+
+.orbit-3 {
+  width: 200px;
+  height: 200px;
+  top: -60px;
+  left: -60px;
+  animation: orbit3 20s linear infinite;
+}
+
+.planet {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--accent-tertiary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  box-shadow: 0 0 10px var(--accent-tertiary);
+}
+
+.orbit-1 .planet {
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.orbit-2 .planet {
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+}
+
+.orbit-3 .planet {
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes skillsContainerFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes orbGlow {
+  0% {
+    box-shadow: 0 0 20px var(--accent-primary);
+  }
+  100% {
+    box-shadow: 0 0 40px var(--accent-primary);
+  }
+}
+
+@keyframes iconPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes orbit1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  flex: 1;
+}
+.skill-card {
+  background: var(--bg-tertiary) !important;
+  border-radius: 16px;
+  box-shadow: 0 0 12px var(--shadow-color);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--shadow-color), transparent);
+  transition: left 0.8s;
+}
+
+.skill-card:hover::before {
+  left: 100%;
+}
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.skill-name {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background: #23234a;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+.skill-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: #6c63ff;
+}
+.skill-level {
+  font-size: 0.95rem;
+  color: #6c63ff;
+  font-weight: 500;
+}
+.skill-category {
+  font-size: 0.85rem;
+  color: #b3b3b3;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+  .skills-section h2 {
+    font-size: 2rem;
+  }
+  .skills-3d-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .skills-3d-canvas {
+    flex: 0 0 200px;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+  .skill-card {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-section {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+  }
+  .skills-section h2 {
+    font-size: 1.8rem;
+  }
+  .skills-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .skill-card {
+    padding: 1rem;
+  }
+  .skill-icon {
+    font-size: 1.5rem;
+  }
+  .skill-name {
+    font-size: 0.95rem;
+  }
+}

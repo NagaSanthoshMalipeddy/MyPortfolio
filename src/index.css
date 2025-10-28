@@ -1,0 +1,226 @@
+/* Global Reset and Base Styles */
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Theme Colors - Dark Mode (Default) */
+  --bg-primary: #181824;
+  --bg-secondary: #16162b;
+  --bg-tertiary: #23234a;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0d1;
+  --accent-primary: #6c63ff;
+  --accent-secondary: #3b82f6;
+  --accent-tertiary: #8b5cf6;
+  --border-color: #2a2a4a;
+  --shadow-color: rgba(108, 99, 255, 0.2);
+  --gradient-primary: linear-gradient(135deg, #6c63ff, #3b82f6);
+  --gradient-secondary: linear-gradient(135deg, #8b5cf6, #6c63ff);
+  
+  /* Custom Properties for Responsive Design */
+  --max-width: 1200px;
+  --padding-large: 2rem;
+  --padding-medium: 1rem;
+  --padding-small: 0.5rem;
+}
+
+/* Light Mode Theme */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --accent-primary: #6c63ff;
+  --accent-secondary: #3b82f6;
+  --accent-tertiary: #8b5cf6;
+  --border-color: #dee2e6;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --gradient-primary: linear-gradient(135deg, #6c63ff, #3b82f6);
+  --gradient-secondary: linear-gradient(135deg, #8b5cf6, #6c63ff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Responsive Container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding-large);
+}
+
+/* Typography Scale */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Link Styles */
+a {
+  color: #6c63ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5a54d9;
+}
+
+/* Button Reset */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #6c63ff;
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid #6c63ff;
+  outline-offset: 2px;
+}
+
+/* Form Elements */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Image Responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  :root {
+    --padding-large: var(--padding-medium);
+  }
+  
+  .container {
+    padding: 0 var(--padding-medium);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --padding-medium: var(--padding-small);
+  }
+  
+  .container {
+    padding: 0 var(--padding-small);
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Canvas and WebGL Responsiveness */
+canvas {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Global theme overrides for all sections */
+.experience-section,
+.skills-section,
+.achievements-section,
+.certifications-section,
+.projects-section,
+.contact-section {
+  color: var(--text-primary) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Override hardcoded background colors */
+.experience-section {
+  background: var(--bg-secondary) !important;
+}
+
+.skills-section {
+  background: var(--bg-primary) !important;
+}
+
+.achievements-section {
+  background: var(--bg-secondary) !important;
+}
+
+.certifications-section {
+  background: var(--bg-primary) !important;
+}
+
+.projects-section {
+  background: var(--bg-secondary) !important;
+}
+
+.contact-section {
+  background: var(--bg-primary) !important;
+}
+
+/* Ensure no white gaps between sections */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}

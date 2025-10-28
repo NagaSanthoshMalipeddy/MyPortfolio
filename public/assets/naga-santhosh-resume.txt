@@ -1,0 +1,10 @@
+# Resume Placeholder
+
+This is a placeholder for the resume PDF file.
+
+To replace this with your actual resume:
+1. Create a PDF version of your resume
+2. Name it `naga-santhosh-resume.pdf`
+3. Place it in this `/public/assets/` directory
+
+The download link in the portfolio will automatically work once you add the actual PDF file.

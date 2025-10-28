@@ -1,0 +1,9 @@
+/* Loading Spinner Styles */
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  margin: auto;
+}
