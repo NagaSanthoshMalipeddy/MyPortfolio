@@ -1,34 +1,41 @@
 # 3D Portfolio Website
 
-A modern, professional 3D portfolio website for software engineers built with React, TypeScript, Three.js, and Framer Motion.
+A modern, professional 3D portfolio website for software engineers built with React, TypeScript, and Framer Motion.
 
 ## Features
 
-- **3D Effects & Animations**: Interactive 3D elements using Three.js and React Three Fiber
+- **CSS Animations**: Smooth and performant CSS-based animations replacing Three.js
 - **Smooth Animations**: Page transitions and micro-interactions with Framer Motion
-- **Dark Theme**: Professional color scheme with blue/purple accent colors
+- **Dark/Light Theme**: Complete theme switching with professional color schemes
 - **Responsive Design**: Seamless experience across desktop, tablet, and mobile
-- **Performance Optimized**: Fast loading times and smooth 60fps animations
+- **Performance Optimized**: Fast loading times with CSS animations
 - **Accessibility**: WCAG compliant with proper semantic HTML and ARIA labels
 
 ## Sections Included
 
-- **Hero Section**: 3D rotating geometric shapes with professional headshot
-- **Experience Timeline**: Interactive timeline with company logos and achievements
-- **Skills Showcase**: 3D skill grid with animated progress bars
-- **Achievements**: Award cards with 3D tilt effects
-- **Certifications**: Certificate cards with flip animations
-- **Projects Portfolio**: Interactive 3D project cards with demos
-- **Contact Form**: Animated contact form with validation
+- **Hero Section**: Professional introduction with animated background elements
+- **Experience & Education Timeline**: Interactive timeline with company logos and achievements
+- **Skills Showcase**: CSS orbital animation system with skill percentages
+- **Achievements**: Award cards with golden trophy animation
+- **Certifications**: Professional certifications with dates
+- **Projects Portfolio**: Interactive project cards with detailed descriptions
+- **Contact Form**: Animated contact form with floating sphere animation
 
 ## Tech Stack
 
 - **Frontend**: React 18 + TypeScript
-- **3D Graphics**: Three.js + React Three Fiber + Drei
-- **Animations**: Framer Motion
+- **Animations**: Framer Motion + CSS Animations
 - **Build Tool**: Vite
-- **Styling**: CSS3 with custom properties
-- **Icons**: React Icons
+- **Styling**: CSS3 with custom properties and animations
+- **Theme System**: Complete dark/light mode support
+
+## Personal Information
+
+This portfolio showcases the work and achievements of **Naga Santhosh Malipeddy**:
+- **Role**: Associate Software Developer at SOTI
+- **Experience**: 2+ years in C#, .NET, ASP.NET Core, REST APIs
+- **Education**: B.Tech (CSE) from RGMCET, JNTU Anantapuramu (2019-2023)
+- **Location**: Nandyal, Andhra Pradesh, India
 
 ## Getting Started
 
@@ -38,8 +45,8 @@ A modern, professional 3D portfolio website for software engineers built with Re
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/3d-portfolio.git
-cd 3d-portfolio
+git clone https://github.com/NagaSanthoshMalipeddy/MyPortfolio.git
+cd MyPortfolio
 
 # Install dependencies
 npm install
@@ -62,47 +69,35 @@ The development server runs on `http://localhost:5173/` with hot module replacem
 ```
 src/
 ├── components/          # React components
-│   ├── HeroSection.tsx     # Hero section with 3D elements
-│   ├── ExperienceSection.tsx # Work experience timeline
-│   ├── SkillsSection.tsx   # Skills with 3D visualization
-│   ├── AchievementsSection.tsx # Awards and recognition
+│   ├── HeroSection.tsx     # Hero section with animated elements
+│   ├── ExperienceSection.tsx # Work experience & education timeline
+│   ├── SkillsSection.tsx   # Skills with CSS orbital animation
+│   ├── AchievementsSection.tsx # Awards with trophy animation
 │   ├── CertificationsSection.tsx # Professional certifications
 │   ├── ProjectsSection.tsx # Portfolio projects
-│   ├── ContactSection.tsx  # Contact form
-│   ├── Loading3DSpinner.tsx # 3D loading animation
+│   ├── ContactSection.tsx  # Contact form with sphere animation
+│   ├── Loading3DSpinner.tsx # Loading animation
 │   └── ThemeSwitcher.tsx   # Theme toggle component
 ├── App.tsx             # Main application component
 ├── main.tsx           # Application entry point
-└── index.css          # Global styles
+└── index.css          # Global styles and theme variables
 ```
 
-## Customization
+## Features Implemented
 
-### Placeholder Assets
-The following placeholder assets need to be replaced with your actual content:
-
-- `/assets/headshot.png` - Your professional headshot
-- `/assets/resume.pdf` - Your resume/CV file
-- Company logos in experience section
-- Achievement badges and certification logos
-- Project screenshots
-- Update personal information throughout the components
-
-### Content Updates
-1. Update personal information in `HeroSection.tsx`
-2. Replace experience data in `ExperienceSection.tsx`
-3. Customize skills in `SkillsSection.tsx`
-4. Add your achievements in `AchievementsSection.tsx`
-5. Update certifications in `CertificationsSection.tsx`
-6. Replace projects in `ProjectsSection.tsx`
-7. Update contact information in `ContactSection.tsx`
+✅ **Updated Personal Data**: All information fetched from actual GitHub Pages  
+✅ **CSS Animations**: Replaced Three.js with performant CSS animations  
+✅ **Complete Theme System**: Dark/light mode with CSS variables  
+✅ **Responsive Design**: Mobile-first approach with proper breakpoints  
+✅ **Professional Content**: Real project descriptions and achievements  
+✅ **Performance Optimized**: Fast loading and smooth animations  
 
 ## Performance Optimization
 
-- Lazy loading for images and 3D components
-- Code splitting for optimal bundle sizes
-- Optimized Three.js scenes for 60fps performance
-- Compressed textures and efficient geometry
+- CSS-only animations for better performance and compatibility
+- Optimized bundle sizes with Vite
+- Responsive images and lazy loading
+- Smooth 60fps animations
 - Progressive enhancement for older browsers
 
 ## Browser Support
@@ -112,29 +107,21 @@ The following placeholder assets need to be replaced with your actual content:
 - Safari 14+
 - Edge 88+
 
-## Contributing
+## Contact
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+- **Email**: nagasantoshmalipeddy@gmail.com
+- **Phone**: +91 8919043274
+- **GitHub**: [NagaSanthoshMalipeddy](https://github.com/NagaSanthoshMalipeddy)
+- **LinkedIn**: [naga-santhosh-malipeddy](https://www.linkedin.com/in/naga-santhosh-malipeddy-b6750620a)
 
 ## License
 
-MIT License - feel free to use this project for your own portfolio.
+MIT License - feel free to use this project as inspiration for your own portfolio.
 
 ## Credits
 
 Built with modern web technologies:
-- React Three Fiber for 3D graphics
+- React + TypeScript for robust development
 - Framer Motion for smooth animations
+- CSS3 for performant visual effects
 - Vite for fast development and building
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
