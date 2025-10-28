@@ -3,10 +3,24 @@ import './ExperienceSection.css';
 
 const experiences = [
   {
+    company: 'Microsoft',
+    logo: '/assets/icons/microsoft-logo.svg',
+    role: 'Software Engineer',
+    period: 'May 2025 - Present',
+    description: 'Currently working as a Software Engineer at Microsoft, contributing to innovative cloud solutions and enterprise software development.',
+    technologies: ['C#', '.NET', 'Azure', 'Cloud Computing', 'Microservices'],
+    accomplishments: [
+      'Contributing to Microsoft Azure cloud platform development',
+      'Working on scalable enterprise solutions serving millions of users',
+      'Implementing best practices in cloud-native application development',
+      'Collaborating with cross-functional teams on cutting-edge technology projects'
+    ],
+  },
+  {
     company: 'SOTI',
     logo: '/assets/icons/soti-logo.svg',
     role: 'Associate Software Developer',
-    period: 'July 2023 - Present',
+    period: 'July 2023 - April 2025',
     description: 'Led development of 4 epics focusing on architecture and security guidelines, improving project efficiency.',
     technologies: ['C#', '.NET', 'ASP.NET Core', 'REST APIs', 'Angular'],
     accomplishments: [
@@ -41,24 +55,11 @@ const experiences = [
       'Optimized algorithms, achieving significant improvements in performance and efficiency'
     ],
   },
-  {
-    company: 'RGMCET',
-    logo: '/assets/icons/rgmcet-logo.svg',
-    role: 'B.Tech (Computer Science and Engineering)',
-    period: '2019 - 2023',
-    description: 'Completed Bachelor of Technology in Computer Science and Engineering from JNTU, Anantapuramu.',
-    technologies: ['Computer Science', 'Engineering', 'JNTU'],
-    accomplishments: [
-      'Graduated from Rajeev Gandhi Memorial College of Engineering and Technology (Autonomous)',
-      'Affiliated with JNTU, Anantapuramu',
-      'Specialized in Computer Science and Engineering'
-    ],
-  },
 ];
 
 const ExperienceSection = () => (
   <section className="experience-section">
-    <h2>Experience & Education</h2>
+    <h2>Experience</h2>
     <div className="timeline">
       {experiences.map((exp, idx) => (
         <motion.div

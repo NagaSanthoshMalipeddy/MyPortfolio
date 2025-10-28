@@ -47,7 +47,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className='hero-subtitle'
           >
-            Associate Software Developer
+            Software Engineer at Microsoft
           </motion.h2>
           
           <motion.p
@@ -56,9 +56,9 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className='hero-description'
           >
-            Experienced Software Developer skilled in C#, .NET, and REST API development, 
-            with a proven track record in project leadership and code optimization. Seeking a 
-            role to solve complex problems and drive innovation in a collaborative environment.
+            Software Engineer at Microsoft with expertise in C#, .NET, Azure, and cloud computing. 
+            Experienced in developing scalable enterprise solutions and REST API development, 
+            with a proven track record in project leadership and driving innovation in collaborative environments.
           </motion.p>
           
           <motion.div
