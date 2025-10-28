@@ -18,12 +18,26 @@
   --shadow-color: rgba(108, 99, 255, 0.2);
   --gradient-primary: linear-gradient(135deg, #6c63ff, #3b82f6);
   --gradient-secondary: linear-gradient(135deg, #8b5cf6, #6c63ff);
+  --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-professional: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  
+  /* Professional Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.2);
+  --shadow-glow: 0 0 20px rgba(108, 99, 255, 0.3);
   
   /* Custom Properties for Responsive Design */
   --max-width: 1200px;
   --padding-large: 2rem;
   --padding-medium: 1rem;
   --padding-small: 0.5rem;
+  
+  /* Professional Typography */
+  --font-heading: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-mono: 'Fira Code', 'Consolas', 'Monaco', monospace;
 }
 
 /* Light Mode Theme */

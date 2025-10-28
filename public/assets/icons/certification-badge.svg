@@ -1,0 +1,30 @@
+<!-- Professional Certification Badge -->
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="certGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    <filter id="certShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Badge Circle -->
+  <circle cx="60" cy="60" r="50" fill="url(#certGrad)" filter="url(#certShadow)"/>
+  <circle cx="60" cy="60" r="40" fill="none" stroke="#fff" stroke-width="2"/>
+  <circle cx="60" cy="60" r="30" fill="none" stroke="#fff" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Certification Symbol -->
+  <path d="M45 55 L55 65 L75 45" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Stars around -->
+  <polygon points="30,30 32,35 37,35 33,39 35,44 30,41 25,44 27,39 23,35 28,35" fill="#fff" opacity="0.8"/>
+  <polygon points="90,30 92,35 97,35 93,39 95,44 90,41 85,44 87,39 83,35 88,35" fill="#fff" opacity="0.8"/>
+  <polygon points="30,90 32,95 37,95 33,99 35,104 30,101 25,104 27,99 23,95 28,95" fill="#fff" opacity="0.8"/>
+  <polygon points="90,90 92,95 97,95 93,99 95,104 90,101 85,104 87,99 83,95 88,95" fill="#fff" opacity="0.8"/>
+  
+  <!-- Center Text -->
+  <text x="60" y="75" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="8" font-weight="bold">CERTIFIED</text>
+</svg>

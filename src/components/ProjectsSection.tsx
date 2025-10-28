@@ -23,7 +23,7 @@ const FloatingCodeCube = () => {
 const projects = [
   {
     title: 'Samsung Knox E FOTA',
-    image: '/assets/samsung-knox.svg',
+    image: '/assets/icons/samsung-knox-project.svg',
     tech: ['C#', '.NET', 'REST APIs', 'Samsung Knox'],
     github: 'https://github.com/NagaSanthoshMalipeddy',
     demo: '#',
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: 'Filtration for Devices in Policies',
-    image: '/assets/device-filter.svg',
+    image: '/assets/icons/device-filter-project.svg',
     tech: ['C#', '.NET', 'SOTI MobiControl'],
     github: 'https://github.com/NagaSanthoshMalipeddy',
     demo: '#',
@@ -39,7 +39,7 @@ const projects = [
   },
   {
     title: 'Zebra OEM with MGPA',
-    image: '/assets/zebra-oem.svg',
+    image: '/assets/icons/zebra-oem-project.svg',
     tech: ['C#', '.NET', 'Google Services', 'Zebra APIs'],
     github: 'https://github.com/NagaSanthoshMalipeddy',
     demo: '#',
@@ -47,7 +47,7 @@ const projects = [
   },
   {
     title: 'Online Quiz Exam',
-    image: '/assets/quiz-app.svg',
+    image: '/assets/icons/quiz-app-project.svg',
     tech: ['Web Development', 'Database', 'Frontend'],
     github: 'https://github.com/NagaSanthoshMalipeddy',
     demo: '#',

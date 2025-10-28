@@ -1,0 +1,24 @@
+<!-- Professional Company Logo - GeeksforGeeks -->
+<svg width="120" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gfgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d9488;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Company Background -->
+  <rect width="120" height="80" rx="8" fill="url(#gfgGrad)"/>
+  
+  <!-- GFG Logo -->
+  <text x="60" y="28" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">GFG</text>
+  <text x="60" y="45" text-anchor="middle" fill="#ccfbf1" font-family="Arial, sans-serif" font-size="8">GEEKS FOR GEEKS</text>
+  <text x="60" y="58" text-anchor="middle" fill="#ccfbf1" font-family="Arial, sans-serif" font-size="8">CODING PLATFORM</text>
+  
+  <!-- Code Brackets -->
+  <text x="30" y="35" text-anchor="middle" fill="#fff" font-family="monospace" font-size="14" opacity="0.8">&lt;</text>
+  <text x="90" y="35" text-anchor="middle" fill="#fff" font-family="monospace" font-size="14" opacity="0.8">&gt;</text>
+  
+  <!-- Binary Pattern -->
+  <text x="60" y="70" text-anchor="middle" fill="#ccfbf1" font-family="monospace" font-size="6" opacity="0.6">010110</text>
+</svg>

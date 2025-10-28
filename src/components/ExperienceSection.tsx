@@ -4,7 +4,7 @@ import './ExperienceSection.css';
 const experiences = [
   {
     company: 'SOTI',
-    logo: '/assets/soti.svg',
+    logo: '/assets/icons/soti-logo.svg',
     role: 'Associate Software Developer',
     period: 'July 2023 - Present',
     description: 'Led development of 4 epics focusing on architecture and security guidelines, improving project efficiency.',
@@ -18,7 +18,7 @@ const experiences = [
   },
   {
     company: 'Virtusa',
-    logo: '/assets/virtusa.svg',
+    logo: '/assets/icons/virtusa-logo.svg',
     role: 'ASD Intern',
     period: 'Jan 2023 - Jun 2023',
     description: 'Collaborated on 3 minor projects to enhance technical skills and adapt to workplace culture.',
@@ -31,7 +31,7 @@ const experiences = [
   },
   {
     company: 'GeeksforGeeks',
-    logo: '/assets/gfg.svg',
+    logo: '/assets/icons/gfg-logo.svg',
     role: 'Contributor',
     period: 'May 2024 - Present',
     description: 'Fixed critical algorithm bugs and released improved versions with better accuracy and functionality.',
@@ -43,7 +43,7 @@ const experiences = [
   },
   {
     company: 'RGMCET',
-    logo: '/assets/college.svg',
+    logo: '/assets/icons/rgmcet-logo.svg',
     role: 'B.Tech (Computer Science and Engineering)',
     period: '2019 - 2023',
     description: 'Completed Bachelor of Technology in Computer Science and Engineering from JNTU, Anantapuramu.',

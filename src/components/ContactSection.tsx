@@ -21,7 +21,7 @@ const FloatingContactSphere = () => {
 };
 
 const ContactSection = () => (
-  <section className="contact-section">
+  <section id="contact" className="contact-section">
     <h2>Contact</h2>
     <div className="contact-3d-container">
       <div className="contact-3d-canvas">

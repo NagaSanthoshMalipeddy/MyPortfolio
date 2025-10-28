@@ -22,12 +22,12 @@ function SkillsVisualization() {
 }
 
 const skills = [
-  { name: 'Java', icon: '☕', level: '90%' },
-  { name: 'C# .NET', icon: '⚡', level: '90%' },
+  { name: 'Java', icon: '/assets/icons/java-icon.svg', level: '90%' },
+  { name: 'C# .NET', icon: '/assets/icons/csharp-icon.svg', level: '90%' },
   { name: 'ASP.NET Core', icon: '🌐', level: '90%' },
-  { name: 'DBMS & SQL', icon: '🗄️', level: '95%' },
-  { name: 'REST APIs', icon: '�', level: '95%' },
-  { name: 'Data Structures', icon: '📊', level: '95%' },
+  { name: 'DBMS & SQL', icon: '/assets/icons/database-icon.svg', level: '95%' },
+  { name: 'REST APIs', icon: '/assets/icons/api-icon.svg', level: '95%' },
+  { name: 'Data Structures', icon: '/assets/icons/datastructures-icon.svg', level: '95%' },
   { name: 'Low Level Design', icon: '🏗️', level: '95%' },
   { name: 'OOP', icon: '🧩', level: '95%' },
   { name: 'SOLID Principles', icon: '⚙️', level: '95%' },
@@ -61,7 +61,13 @@ const SkillsSection = () => (
               damping: 15
             }}
           >
-            <div className='skill-icon'>{skill.icon}</div>
+            <div className='skill-icon'>
+              {skill.icon.includes('.svg') ? (
+                <img src={skill.icon} alt={`${skill.name} icon`} className='skill-icon-img' />
+              ) : (
+                <span className='skill-icon-emoji'>{skill.icon}</span>
+              )}
+            </div>
             <h3>{skill.name}</h3>
             <p>{skill.level}</p>
           </motion.div>

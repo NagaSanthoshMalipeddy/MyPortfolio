@@ -4,25 +4,25 @@ import './CertificationsSection.css';
 const certifications = [
   {
     title: 'Oracle Certified Java Associate (OCJA)',
-    orgLogo: '/assets/oracle.svg',
+    orgLogo: '/assets/icons/certification-badge.svg',
     date: 'Certified in 2022',
     link: 'https://oracle.com/verification',
   },
   {
     title: 'Microsoft Technology Associate (MTA) Java',
-    orgLogo: '/assets/microsoft.svg',
+    orgLogo: '/assets/icons/certification-badge.svg',
     date: 'Certified in 2022',
     link: 'https://microsoft.com/verify',
   },
   {
     title: 'Certified by HackerRank - Java, SQL, ReactJS',
-    orgLogo: '/assets/hackerrank.svg',
+    orgLogo: '/assets/icons/certification-badge.svg',
     date: 'Certified in 2022',
     link: 'https://hackerrank.com/certificates',
   },
   {
     title: 'Microsoft Azure Fundamentals',
-    orgLogo: '/assets/azure.svg',
+    orgLogo: '/assets/icons/certification-badge.svg',
     date: 'Certified in 2024',
     link: 'https://azure.microsoft.com/certification',
   },

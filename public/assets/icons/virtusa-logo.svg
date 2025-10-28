@@ -1,0 +1,25 @@
+<!-- Professional Company Logo - Virtusa -->
+<svg width="120" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="virtusaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Company Background -->
+  <rect width="120" height="80" rx="8" fill="url(#virtusaGrad)"/>
+  
+  <!-- Company Logo -->
+  <text x="60" y="35" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Virtusa</text>
+  <text x="60" y="55" text-anchor="middle" fill="#d1fae5" font-family="Arial, sans-serif" font-size="9">DIGITAL ENGINEERING</text>
+  
+  <!-- V Symbol -->
+  <path d="M45 15 L52 25 L60 15 L68 25 L75 15" stroke="#fff" stroke-width="2" fill="none" opacity="0.7"/>
+  
+  <!-- Tech Dots -->
+  <circle cx="25" cy="65" r="2" fill="#fff" opacity="0.8"/>
+  <circle cx="35" cy="65" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="85" cy="65" r="2" fill="#fff" opacity="0.8"/>
+  <circle cx="95" cy="65" r="2" fill="#fff" opacity="0.6"/>
+</svg>
