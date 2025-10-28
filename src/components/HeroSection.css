@@ -11,10 +11,6 @@
   overflow: hidden;
   padding: 2rem 1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
-  background-image: url('/assets/tech-background.svg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .hero-bg-animation {

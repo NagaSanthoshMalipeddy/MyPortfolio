@@ -20,7 +20,7 @@ const HeroSection = () => {
           className='hero-avatar'
         >
           <img 
-            src='/assets/professional-avatar.svg' 
+            src='./assets/professional-avatar.svg' 
             alt='Professional Avatar' 
             className='avatar-image'
           />

@@ -22,12 +22,12 @@ function SkillsVisualization() {
 }
 
 const skills = [
-  { name: 'Java', icon: '/assets/icons/java-icon.svg', level: '90%' },
-  { name: 'C# .NET', icon: '/assets/icons/csharp-icon.svg', level: '90%' },
+  { name: 'Java', icon: './assets/icons/java-icon.svg', level: '90%' },
+  { name: 'C# .NET', icon: './assets/icons/csharp-icon.svg', level: '90%' },
   { name: 'ASP.NET Core', icon: '🌐', level: '90%' },
-  { name: 'DBMS & SQL', icon: '/assets/icons/database-icon.svg', level: '95%' },
-  { name: 'REST APIs', icon: '/assets/icons/api-icon.svg', level: '95%' },
-  { name: 'Data Structures', icon: '/assets/icons/datastructures-icon.svg', level: '95%' },
+  { name: 'DBMS & SQL', icon: './assets/icons/database-icon.svg', level: '95%' },
+  { name: 'REST APIs', icon: './assets/icons/api-icon.svg', level: '95%' },
+  { name: 'Data Structures', icon: './assets/icons/datastructures-icon.svg', level: '95%' },
   { name: 'Low Level Design', icon: '🏗️', level: '95%' },
   { name: 'OOP', icon: '🧩', level: '95%' },
   { name: 'SOLID Principles', icon: '⚙️', level: '95%' },
