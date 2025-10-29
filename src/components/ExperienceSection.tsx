@@ -4,7 +4,7 @@ import './ExperienceSection.css';
 const experiences = [
   {
     company: 'Microsoft',
-    logo: '/assets/icons/microsoft-logo.svg',
+    logo: './assets/icons/microsoft-logo.svg',
     role: 'Software Engineer',
     period: 'May 2025 - Present',
     description: 'Currently working as a Software Engineer at Microsoft, contributing to innovative cloud solutions and enterprise software development.',
@@ -18,7 +18,7 @@ const experiences = [
   },
   {
     company: 'SOTI',
-    logo: '/assets/icons/soti-logo.svg',
+    logo: './assets/icons/soti-logo.svg',
     role: 'Associate Software Developer',
     period: 'July 2023 - April 2025',
     description: 'Led development of 4 epics focusing on architecture and security guidelines, improving project efficiency.',
@@ -32,7 +32,7 @@ const experiences = [
   },
   {
     company: 'Virtusa',
-    logo: '/assets/icons/virtusa-logo.svg',
+    logo: './assets/icons/virtusa-logo.svg',
     role: 'ASD Intern',
     period: 'Jan 2023 - Jun 2023',
     description: 'Collaborated on 3 minor projects to enhance technical skills and adapt to workplace culture.',
@@ -45,7 +45,7 @@ const experiences = [
   },
   {
     company: 'GeeksforGeeks',
-    logo: '/assets/icons/gfg-logo.svg',
+    logo: './assets/icons/gfg-logo.svg',
     role: 'Contributor',
     period: 'May 2024 - Present',
     description: 'Fixed critical algorithm bugs and released improved versions with better accuracy and functionality.',
