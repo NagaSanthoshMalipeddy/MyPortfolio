@@ -59,7 +59,35 @@ npm run build
 
 # Preview production build
 npm run preview
+
+# Deploy to GitHub Pages (manual)
+npm run deploy
 ```
+
+## Deployment
+
+This portfolio is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+### Live Site
+🌐 **[View Live Portfolio](https://nagasanthoshmalipeddy.github.io/MyPortfolio)**
+
+### Automatic Deployment
+Every push to the `master` branch automatically triggers deployment via GitHub Actions:
+1. Builds the application
+2. Uploads the build artifacts to GitHub Pages
+3. Makes the site live at the URL above
+
+### Manual Deployment
+You can also deploy manually using:
+```bash
+npm run deploy
+```
+
+### Deployment Configuration
+- **GitHub Actions**: `.github/workflows/deploy.yml`
+- **Build Output**: `dist/` directory
+- **Base URL**: `/MyPortfolio/` (configured in `vite.config.ts`)
+- **Homepage**: Set in `package.json` for GitHub Pages
 
 ## Development
 
