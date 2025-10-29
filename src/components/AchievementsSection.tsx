@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
 import './AchievementsSection.css';
 
+// Import achievement icon
+import achievementTrophy from '/assets/icons/achievement-trophy.svg';
+
 // CSS-only trophy animation component
 const FloatingTrophy = () => {
   return (
@@ -19,27 +22,27 @@ const FloatingTrophy = () => {
 const achievements = [
   {
     title: 'Microsoft Badge Certification',
-    badge: '/assets/icons/achievement-trophy.svg',
+    badge: achievementTrophy,
     description: 'Secured a badge from Microsoft for getting certified in technology fundamentals in 2022.',
   },
   {
     title: 'Oracle Corporation Badge',
-    badge: '/assets/icons/achievement-trophy.svg',
+    badge: achievementTrophy,
     description: 'Got a badge from Oracle Corporation for Java certification excellence in 2022.',
   },
   {
     title: 'Level 3 Coder in LeetCode',
-    badge: '/assets/icons/achievement-trophy.svg',
+    badge: achievementTrophy,
     description: 'Achieved Level 3 status on LeetCode demonstrating strong problem-solving skills.',
   },
   {
     title: 'Top 10 Finalists - NeuralHack',
-    badge: '/assets/icons/achievement-trophy.svg',
+    badge: achievementTrophy,
     description: 'Top 10 finalists in NeuralHack Hackathon organized by Virtusa in 2023.',
   },
   {
     title: 'Best Performer - Virtusa',
-    badge: '/assets/icons/achievement-trophy.svg',
+    badge: achievementTrophy,
     description: 'Recognized as Best Performer among interns at Virtusa during internship period.',
   },
 ];

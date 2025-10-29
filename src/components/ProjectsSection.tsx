@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion';
 import './ProjectsSection.css';
 
+// Import project images
+import samsungKnoxProject from '/assets/icons/samsung-knox-project.svg';
+import deviceFilterProject from '/assets/icons/device-filter-project.svg';
+import zebraOemProject from '/assets/icons/zebra-oem-project.svg';
+import quizAppProject from '/assets/icons/quiz-app-project.svg';
+
 const FloatingCodeCube = () => {
   return (
     <div className="floating-code-cube">
@@ -23,7 +29,7 @@ const FloatingCodeCube = () => {
 const projects = [
   {
     title: 'Samsung Knox E FOTA',
-    image: '/assets/icons/samsung-knox-project.svg',
+    image: samsungKnoxProject,
     tech: ['C#', '.NET', 'REST APIs', 'Samsung Knox'],
     github: 'https://github.com/NagaSanthoshMalipeddy',
     demo: '#',
@@ -31,7 +37,7 @@ const projects = [
   },
   {
     title: 'Filtration for Devices in Policies',
-    image: '/assets/icons/device-filter-project.svg',
+    image: deviceFilterProject,
     tech: ['C#', '.NET', 'SOTI MobiControl'],
     github: 'https://github.com/NagaSanthoshMalipeddy',
     demo: '#',
@@ -39,7 +45,7 @@ const projects = [
   },
   {
     title: 'Zebra OEM with MGPA',
-    image: '/assets/icons/zebra-oem-project.svg',
+    image: zebraOemProject,
     tech: ['C#', '.NET', 'Google Services', 'Zebra APIs'],
     github: 'https://github.com/NagaSanthoshMalipeddy',
     demo: '#',
@@ -47,7 +53,7 @@ const projects = [
   },
   {
     title: 'Online Quiz Exam',
-    image: '/assets/icons/quiz-app-project.svg',
+    image: quizAppProject,
     tech: ['Web Development', 'Database', 'Frontend'],
     github: 'https://github.com/NagaSanthoshMalipeddy',
     demo: '#',
